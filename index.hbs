@@ -3,11 +3,15 @@
 into the {body} of the default.hbs template --}}
 {{> "header"}}
 
+<hr />
+
   {{#foreach posts}}
 
     <a href="{{url}}"><h2>{{title}}</h2></a>
     <p>{{excerpt words="33"}}</p>
 
   {{/foreach}}
+
+<hr />
 
 {{> "nav"}}
