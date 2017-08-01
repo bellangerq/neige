@@ -3,9 +3,14 @@
 {{!-- The tag above means: insert everything in this file
 into the {body} of the default.hbs template --}}
 
-{{!-- Everything inside the #post tags pulls data from the post --}}
+{{! HEADER PARTIAL GOES HERE }}
+
 {{#post}}
   <h1>{{title}}</h1>
   <time datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM YYYY"}}</time>
   <p>{{content}}</p>
 {{/post}}
+
+{{! SHARING PARTIAL GOES HERE }}
+
+{{! NAVIGATION PARTIAL GOES HERE }}
