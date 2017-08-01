@@ -388,3 +388,16 @@ template {
  */
 [hidden] {
   display: none; }
+
+.header {
+  padding: 25px; }
+  @media (min-width: 768px) {
+    .header {
+      padding: 50px; } }
+  .header .blog-title {
+    color: gray;
+    text-decoration: none; }
+    .header .blog-title:hover {
+      color: #333333; }
+    .header .blog-title .blog-icon {
+      max-width: 50px; }
