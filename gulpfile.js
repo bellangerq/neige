@@ -2,12 +2,20 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const zip = require('gulp-zip');
+const imageOptim = require('gulp-imageoptim');
 
 gulp.task('sass', () =>
   gulp
-    .src('assets/css/style.scss')
+    .src('src/sass/style.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('assets/css'))
+);
+
+gulp.task('images', () =>
+  gulp
+    .src('src/img/**/*')
+    .pipe(imageOptim.optimize())
+    .pipe(gulp.dest('assets/img'))
 );
 
 gulp.task('compress', () =>
@@ -21,6 +29,6 @@ gulp.task('compress', () =>
 		.pipe(gulp.dest(''))
 );
 
-gulp.task('build', ['sass', 'compress'], () =>
+gulp.task('build', ['sass', 'images', 'compress'], () =>
   gulp
 );
