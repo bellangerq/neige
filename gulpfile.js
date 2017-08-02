@@ -20,7 +20,7 @@ gulp.task('build', () =>
     .src([
       './**',
       '!*.zip',
-      '!./{node_modules, node_modules/**}'
+      '!./{node_modules,node_modules/**}'
     ])
 		.pipe(zip('neige.zip'))
 		.pipe(gulp.dest(''))
