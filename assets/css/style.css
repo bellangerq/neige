@@ -390,14 +390,43 @@ template {
   display: none; }
 
 .header {
+  background: #fdfdfd;
   padding: 25px; }
   @media (min-width: 768px) {
     .header {
       padding: 50px; } }
   .header .blog-title {
     color: gray;
+    font-family: "Open sans", "Helvetica", sans-serif;
     text-decoration: none; }
     .header .blog-title:hover {
       color: #333333; }
     .header .blog-title .blog-icon {
       max-width: 50px; }
+
+.navigation {
+  background: #fdfdfd;
+  padding: 25px 0;
+  margin: auto;
+  max-width: 600px; }
+  @media (min-width: 768px) {
+    .navigation {
+      padding: 50px 0; } }
+  .navigation .navigation-item-list {
+    font-family: "Open sans", "Helvetica", sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; }
+    .navigation .navigation-item-list .navigation-item {
+      float: left; }
+      .navigation .navigation-item-list .navigation-item.right {
+        float: right; }
+      .navigation .navigation-item-list .navigation-item a {
+        display: block;
+        color: gray;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none; }
+        .navigation .navigation-item-list .navigation-item a:hover, .navigation .navigation-item-list .navigation-item a:active {
+          color: #333333; }

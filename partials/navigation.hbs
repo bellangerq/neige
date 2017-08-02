@@ -1,7 +1,9 @@
-<ul>
-  {{#foreach navigation}}
-    <li><a href="{{url absolute="true"}}">{{label}}</a></li>
-  {{/foreach}}
-    <li><a href="#">Top</a></li>
-    <li>Neige theme made by <a href="https://quentin-bellanger.com">Quentin</a></li>
-</ul>
+<div class="navigation">
+  <ul class="navigation-item-list">
+    {{#foreach navigation}}
+      <li class="navigation-item"><a href="{{url absolute="true"}}">{{label}}</a></li>
+    {{/foreach}}
+      <li class="navigation-item"><a href="#">Top</a></li>
+      <li class="navigation-item right"><a href="https://quentin-bellanger.com" target="_blank">Neige by Quentin</a></li>
+  </ul>
+</div>
