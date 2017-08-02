@@ -10,12 +10,7 @@ gulp.task('sass', () =>
     .pipe(gulp.dest('assets/css'))
 );
 
-gulp.task('default', () =>
-  gulp
-    .watch('src/sass/*.scss', ['sass'])
-);
-
-gulp.task('build', () =>
+gulp.task('compress', () =>
 	gulp
     .src([
       './**',
@@ -24,4 +19,8 @@ gulp.task('build', () =>
     ])
 		.pipe(zip('neige.zip'))
 		.pipe(gulp.dest(''))
+);
+
+gulp.task('build', ['sass', 'compress'], () =>
+  gulp
 );

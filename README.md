@@ -7,31 +7,33 @@ Neige is a minimalist Ghost theme.
 
 ## Installation
 
-Install ghost-cli with npm
+Install **ghost-cli**:
 ```
 npm install -g ghost-cli
 ```
 
-Install Ghost in development mode
+Install **Ghost** in development mode:
 ```
 ghost install local
 ```
 
-## Development
-
-### Server
-
-### Gulp
-
-Install Gulp and plugins with npm:
+Install **Gulp** and plugins with npm:
 ```
 npm install gulp
-npm install --save-dev gulp-sass
-npm install --save-dev gulp-uglify
+npm i
 ```
 
-Launch Gulp tasks :
-- Convert `.scss` files into `.css`: `gulp sass`.
-- Minify `.js` files: `gulp compress`
+## Development
+
+### Local server
+Start local Ghost server on `localhost:2368`:
+```shell
+ghost start
+```
 
 ### Build
+
+Compile `.scss` to `.css` & compress files into a `.zip`:
+```shell
+gulp build
+```
