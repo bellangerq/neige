@@ -1,4 +1,9 @@
 @import 'normalize';
 @import 'vars';
 @import 'header';
+@import 'index';
 @import 'navigation';
+
+body {
+  background: $color-white;
+}

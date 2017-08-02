@@ -390,7 +390,6 @@ template {
   display: none; }
 
 .header {
-  background: #fdfdfd;
   padding: 25px; }
   @media (min-width: 768px) {
     .header {
@@ -405,14 +404,21 @@ template {
     .header .blog-title .blog-icon {
       max-width: 50px; }
 
+.index {
+  margin: auto;
+  max-width: 600px;
+  padding: 25px; }
+  @media (min-width: 768px) {
+    .index {
+      padding: 50px; } }
+
 .navigation {
-  background: #fdfdfd;
-  padding: 25px 0;
+  padding: 25px;
   margin: auto;
   max-width: 600px; }
   @media (min-width: 768px) {
     .navigation {
-      padding: 50px 0; } }
+      padding: 50px; } }
   .navigation .navigation-item-list {
     font-family: "Open sans", "Helvetica", sans-serif;
     font-size: 14px;
@@ -432,3 +438,6 @@ template {
         text-decoration: none; }
         .navigation .navigation-item-list .navigation-item a:hover, .navigation .navigation-item-list .navigation-item a:active {
           color: #333333; }
+
+body {
+  background: #fdfdfd; }
