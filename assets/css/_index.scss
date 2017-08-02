@@ -1,0 +1,9 @@
+.index {
+  margin: auto;
+  max-width: 600px;
+  padding: 25px;
+
+  @media(min-width: 768px){
+    padding: 50px;
+  }
+}

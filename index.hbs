@@ -2,11 +2,19 @@
 
 {{> "header"}}
 
-{{#foreach posts}}
+<div class="index">
 
-  <a href="{{url}}"><h2>{{title}}</h2></a>
-  <p>{{excerpt words="33"}}</p>
+  {{#foreach posts}}
 
-{{/foreach}}
+  <div class="post">
+
+    <a href="{{url}}"><h2>{{title}}</h2></a>
+    <p>{{excerpt words="33"}}</p>
+
+  </div>
+
+  {{/foreach}}
+
+</div>
 
 {{navigation}}
