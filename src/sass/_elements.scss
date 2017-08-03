@@ -56,6 +56,17 @@ img {
 /* PREFORMATED TEXT */
 /*------------------*/
 
+pre {
+  background: $color-grey-70;
+  padding: 20px;
+  margin: 25px 0 12.5px 0;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+code {
+  line-height: 1.4em;
+}
 /* BLOCKQUOTES */
 /*-------------*/
 
