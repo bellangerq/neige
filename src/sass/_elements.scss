@@ -3,11 +3,13 @@
 
 h1 {
   color: $color-grey;
+  font-family: $font-serif;
   font-size: 45px;
 }
 
 h2 {
   color: $color-grey-10;
+  font-family: $font-serif;
   font-size: 28px;
   margin: 25px 0 12.5px 0;
   &:hover {

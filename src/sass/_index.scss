@@ -1,5 +1,4 @@
 .index {
-  font-family: $font-serif;
   margin: auto;
   max-width: 600px;
   padding: 25px;
@@ -13,16 +12,20 @@
     .posts-item {
       border-bottom: 1px solid $color-grey-70;
       padding: 25px 0;
+
       a {
         text-decoration: none;
       }
+
       .date-block {
+
         .icon {
-          margin: 0 5px 0 0px;
+          margin: 0 5px 0 0;
           position: relative;
-          top: 2px;
-          width: 15px;
+          top: 5px;
+          width: 20px;
         }
+
         .date {
           color: $color-grey-70;
           font-family: $font-sans-serif;
