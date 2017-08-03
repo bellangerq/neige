@@ -17,5 +17,10 @@
     .blog-icon {
       max-width: 50px;
     }
+    svg {
+      stroke: $color-grey-30;
+      &:hover {
+      stroke: $color-grey;
+    }
   }
 }
