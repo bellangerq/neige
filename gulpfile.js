@@ -12,7 +12,7 @@ gulp.task('sass', () =>
     .pipe(gulp.dest('assets/css'))
 );
 
-gulp.task('minify', () =>
+gulp.task('minify', ['sass'], () =>
   gulp
     .src('assets/css/style.css')
     .pipe(cssnano())
@@ -26,7 +26,7 @@ gulp.task('images', () =>
     .pipe(gulp.dest('assets/img'))
 );
 
-gulp.task('compress', () =>
+gulp.task('build', ['minify', 'images'], () =>
 	gulp
     .src([
       './**',
@@ -35,8 +35,4 @@ gulp.task('compress', () =>
     ])
 		.pipe(zip('neige.zip'))
 		.pipe(gulp.dest(''))
-);
-
-gulp.task('build', ['sass', 'minify', 'images', 'compress'], () =>
-  gulp
 );
