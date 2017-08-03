@@ -1,9 +1,35 @@
 .index {
+  font-family: $font-serif;
   margin: auto;
   max-width: 600px;
   padding: 25px;
 
   @media(min-width: 768px){
     padding: 50px;
+  }
+
+  .posts {
+
+    .posts-item {
+      border-bottom: 1px solid $color-grey-70;
+      padding: 25px 0;
+      a {
+        text-decoration: none;
+      }
+      .date-block {
+        .icon {
+          margin: 0 5px 0 0px;
+          position: relative;
+          top: 2px;
+          width: 15px;
+        }
+        .date {
+          color: $color-grey-70;
+          font-family: $font-sans-serif;
+          font-size: 14px;
+          text-transform: uppercase;
+        }
+      }
+    }
   }
 }

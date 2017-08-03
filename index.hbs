@@ -4,16 +4,30 @@
 
 <div class="index">
 
-  {{#foreach posts}}
+  <h1>{{@blog.title}}</h1>
 
-  <div class="post">
+  <div class="posts">
 
-    <a href="{{url}}"><h2>{{title}}</h2></a>
-    <p>{{excerpt words="33"}}</p>
+    {{#foreach posts}}
+
+    <div class="posts-item">
+
+      <a href="{{url}}"><h2 class="title">{{title}}</h2></a>
+
+      <div class="date-block">
+        <img src="src/img/date.png" class="icon" />
+        <time class="date" datetime="{{date format='YYYY-MM-DD'}}">
+          {{date published_at format="DD MMMM YYYY"}}
+        </time>
+      </div>
+
+      <p>{{excerpt words="30"}}...</p>
+
+    </div>
+
+    {{/foreach}}
 
   </div>
-
-  {{/foreach}}
 
 </div>
 

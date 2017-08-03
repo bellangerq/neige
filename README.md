@@ -33,7 +33,12 @@ ghost start
 
 ### Build
 
-Compile `.scss` to `.css` & compress files into a `.zip`:
+Build the `.zip` file to be uploaded on Ghost admin. Before, execute following Gulp tasks:
+- Compile `.scss` to `.css`,
+- Minify `.css`,
+- Compress images,
+- Create `.zip`.
+
 ```shell
 gulp build
 ```
