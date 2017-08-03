@@ -8,13 +8,17 @@
   }
 
   .posts {
+    border-top: 1px solid $color-grey-70;
 
     .posts-item {
-      border-bottom: 1px solid $color-grey-70;
       padding: 25px 0;
 
       a {
         text-decoration: none;
+
+        h2:hover {
+          color: $color-grey;
+        }
       }
 
       .date-block {

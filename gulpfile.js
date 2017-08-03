@@ -19,14 +19,14 @@ gulp.task('minify', ['sass'], () =>
     .pipe(gulp.dest('assets/css/'))
 );
 
-gulp.task('images', () =>
-  gulp
-    .src('src/img/**/*')
-    .pipe(imageOptim.optimize())
-    .pipe(gulp.dest('assets/img'))
-);
+// gulp.task('images', () =>
+//   gulp
+//     .src('src/img/**/*')
+//     .pipe(imageOptim.optimize())
+//     .pipe(gulp.dest('assets/img'))
+// );
 
-gulp.task('build', ['minify', 'images'], () =>
+gulp.task('build', ['minify'], () =>
 	gulp
     .src([
       './**',
