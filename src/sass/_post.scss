@@ -1,0 +1,25 @@
+.post {
+  margin: auto;
+  max-width: 600px;
+  padding: 25px;
+  @media(min-width: 768px){
+    padding: 50px;
+  }
+
+  .date-block {
+
+    .icon {
+      margin: 0 5px 0 0;
+      position: relative;
+      top: 5px;
+      width: 20px;
+    }
+
+    .date {
+      color: $color-grey-70;
+      font-family: $font-sans-serif;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+  }
+}
