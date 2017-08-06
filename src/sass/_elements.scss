@@ -53,6 +53,29 @@ img {
 /* TABLES */
 /*--------*/
 
+table {
+  border-collapse: collapse;
+  display: block;
+  margin: 25px 0 12.5px 0;
+  overflow-x: auto;
+  width: 100%;
+  @media(min-width: 768px) {
+    display: table;
+    overflow-x: visible;
+  }
+}
+
+th {
+  background: $color-grey-70;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid $color-grey;
+  min-width: 80px;
+  padding: 10px;
+}
+
 /* PREFORMATED TEXT */
 /*------------------*/
 
