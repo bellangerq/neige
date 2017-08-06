@@ -50,6 +50,20 @@ img, video {
 /* LISTS */
 /*-------*/
 
+dl {
+  line-height: 25px;
+  margin: 25px 0 12.5px 0;
+
+  dt {
+    border-bottom: 1px dashed $color-grey;
+    display: inline-block;
+  }
+
+  dd {
+    margin: 0 0 0 20px;
+  }
+}
+
 ol, ul {
   line-height: 25px;
   margin: 25px 0 12.5px 0;
