@@ -33,7 +33,7 @@ ghost start
 
 ### Build
 
-Build the `.zip` file to be uploaded on Ghost admin. Before, execute following Gulp tasks:
+Compress the theme in a `.zip` file in order to upload it on the Ghost admin. Also execute these tasks:
 - Compile `.scss` to `.css`,
 - Minify `.css`,
 - Compress images,
