@@ -142,8 +142,11 @@ a {
   color: inherit;
   text-decoration: none;
   &:hover {
-    border-color: $color-grey;
-    border-width: 2px;
+    border-bottom: none;
+  }
+  &:focus {
+    border-bottom: none;
+    outline-color: $color-grey-30;
   }
 }
 
