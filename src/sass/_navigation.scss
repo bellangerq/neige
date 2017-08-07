@@ -1,3 +1,32 @@
 .navigation {
-  
+  background: $color-white;
+  border-bottom: 1px solid $color-grey;
+  list-style-type: none;
+  overflow: auto;
+  padding: 25px 0;
+  position: fixed;
+  top: 0;
+  white-space: nowrap;
+  width: 100%;
+  z-index: 1;
+  .item {
+    border-color: transparent;
+    color: $color-grey-30;
+    display: inline-block;
+    margin: 0 20px;
+    &:hover {
+      border-bottom: 1px solid $color-grey-30;
+    }
+
+    img {
+      vertical-align: bottom;
+      width: 20px;
+    }
+  }
+  @media(min-width: 768px) {
+    border-bottom: none;
+    padding: 50px;
+    position: initial;
+    width: auto;
+  }
 }

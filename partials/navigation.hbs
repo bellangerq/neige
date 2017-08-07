@@ -1,7 +1,8 @@
 <div class="navigation">
-  <ul class="items">
-    {{#foreach navigation}}
-      <li class="item"><a href="{{url absolute="true"}}">{{label}}</a></li>
-    {{/foreach}}
-  </ul>
+  {{#if @blog.icon}}
+    <a class="item" href="/"><img class="blog-icon" src="{{@blog.icon}}" alt="{{@blog.title}}" title="{{@blog.title}}" /></a>
+  {{/if}}
+  {{#foreach navigation}}
+    <a class="item" href="{{url absolute="true"}}">{{label}}</a>
+  {{/foreach}}
 </div>
