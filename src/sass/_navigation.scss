@@ -9,14 +9,12 @@
   white-space: nowrap;
   width: 100%;
   z-index: 1;
+
   .item {
     border-color: transparent;
     color: $color-grey-30;
     display: inline-block;
     margin: 0 20px;
-    &:first-child {
-      margin-left: 0;
-    }
     &:hover {
       border-bottom: 1px solid $color-grey-30;
     }
@@ -24,6 +22,11 @@
     img {
       vertical-align: bottom;
       width: 20px;
+    }
+    @media(min-width: 768px) {
+      &:first-child {
+        margin-left: 0;
+      }
     }
   }
   @media(min-width: 768px) {

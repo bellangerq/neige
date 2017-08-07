@@ -12,3 +12,13 @@ body {
   color: $color-grey;
   font-family: $font-sans-serif;
 }
+
+::-moz-selection {
+  background: $color-grey-30;
+  color: $color-white;
+}
+
+::selection {
+  background: $color-grey-30;
+  color: $color-white;
+}
