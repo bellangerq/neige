@@ -18,11 +18,15 @@
     &:hover {
       border-bottom: 1px solid $color-grey-30;
     }
+    &.blog-icon:hover {
+      border-bottom: none;
+    }
 
     img {
       vertical-align: bottom;
       width: 20px;
     }
+
     @media(min-width: 768px) {
       &:first-child {
         margin-left: 0;
