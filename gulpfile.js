@@ -33,7 +33,7 @@ gulp.task('build', ['minify'], () =>
       '!*.zip',
       '!./{node_modules,node_modules/**}',
       '!./{src,src/**}',
-      '!*.json',
+      '!package-lock.json',
       '!*.js',
       '!*.md'
     ])
