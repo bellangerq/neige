@@ -12,12 +12,16 @@
   }
 
   .info-date, .info-author {
-    display: inline-block;
+    @media(min-width: 768px) {
+      display: inline-block;
+    }
   }
 
   .info-author {
-    margin: 0 0 0 20px;
-
+    @media(min-width: 768px) {
+      margin: 0 0 0 20px;
+    }
+    
     a {
       border-bottom: none;
     }
