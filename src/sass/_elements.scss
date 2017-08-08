@@ -186,26 +186,36 @@ samp {
 /* FORMS */
 /*-------*/
 
-form {
-  margin: 25px 0 12.5px 0;
+button, input[type='submit'], input[type='reset'], input[type='button'] {
+  background: $color-grey-30;
+  border: 1px solid $color-grey-30;
+  box-sizing: border-box;
+  color: $color-white;
+  display: block;
+  margin: 5px 0 15px 0;
+  padding: 10px;
+  width: 100%;
+  &:hover {
+    background: $color-white;
+    color: $color-grey-30;
+    cursor: pointer;
+  }
 }
 
 fieldset {
   border: 1px solid $color-grey-30;
   margin: 25px 0 12.5px 0;
+  padding: 10px;
 }
 
-legend {
-  padding: 0 10px;
-}
-
-label {
-  font-weight: normal;
+form {
+  margin: 25px 0 12.5px 0;
 }
 
 input {
   background: $color-grey-70;
   border: 1px solid $color-grey-30;
+  box-sizing: border-box;
   color: $color-grey;
   display: block;
   margin: 5px 0 15px 0;
@@ -214,49 +224,33 @@ input {
   &:focus {
     background: $color-white;
   }
-  @media(min-width: 768px) {
-    max-width: 300px;
-  }
-
-  &[type='file'] {
-    width: 100%;
-    @media(min-width: 768px) {
-      max-width: 300px;
-    }
-  }
   &[type='color'] {
-    width: 100%;
-    @media(min-width: 768px) {
-      max-width: 300px;
-    }
+    padding: 0;
   }
-  &[type='submit'], [type='reset'], [type='button'], button {
-    background: $color-grey-70;
-    &:hover {
-      background: #fdfdfd;
-      color: #333;
-      cursor: pointer;
-    }
-  }
+}
+
+label {
+  display: block;
+}
+
+legend {
+  padding: 0 10px;
 }
 
 select {
   background: $color-grey-70;
+  box-sizing: border-box;
   display: block;
   margin: 5px 0 15px 0;
   width: 100%;
-  @media(min-width: 768px) {
-    max-width: 300px;
-  }
 }
 
 textarea {
+  box-sizing: border-box;
+  display: block;
   margin: 5px 0 15px 0;
   padding: 10px;
   width: 100%;
-  @media(min-width: 768px) {
-    max-width: 300px;
-  }
 }
 
 /* EMBED */

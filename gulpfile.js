@@ -1,9 +1,9 @@
 'use strict'
 const gulp = require('gulp');
 const sass = require('gulp-sass');
-const zip = require('gulp-zip');
-const imageOptim = require('gulp-imageoptim');
 const cssnano = require('gulp-cssnano');
+const imageOptim = require('gulp-imageoptim');
+const zip = require('gulp-zip');
 
 gulp.task('sass', () =>
   gulp
