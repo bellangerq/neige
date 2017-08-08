@@ -29,13 +29,10 @@ gulp.task('minify', ['sass'], () =>
 gulp.task('build', ['minify'], () =>
 	gulp
     .src([
-      './**',
-      '!*.zip',
-      '!./{node_modules,node_modules/**}',
-      '!./{src,src/**}',
-      '!package-lock.json',
-      '!*.js',
-      '!*.md'
+      './{assets,assets/**}',
+      './{partials,partials/**}',
+      '*.hbs',
+      'package.json'
     ])
 		.pipe(zip('neige.zip'))
 		.pipe(gulp.dest(''))
