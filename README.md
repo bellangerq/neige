@@ -1,29 +1,54 @@
-# neige
+# Neige for Ghost
+
+[Neige](#) is a minimalist and lightweight Ghost theme.
 
 ## About
 
-Neige is a minimalist Ghost theme.
-> Work in progress . . .
+Neige is **simple**. Instead of having many features, it focuses on the basic ones. The minimalist aspect helps removing the clutter to focus on the most important: the content.
 
-## Installation
+Neige is **lightweight**. It only weights **XXXkb** and doesn't contain any JavaScript. Why does it matter? It gives Neige the ability to load very fast everywhere in every browser.
+
+To take a deeper look into Neige, [give the demo a try](#) and browse Neige as you would do on a real blog.
+
+**IMAGE DESKTOP / MOBILE**
+
+## Support
+
+### Installation
+
+To install Neige to your Ghost blog, please follow these steps:
+1. Download the compressed (`.zip`) file of the theme.
+2. Upload it in the **Design** tab of your Ghost admin.
+
+If you have troubles, please refer to the official [Ghost documentation about installing new themes](#).
+
+### Feature request
+
+You think Neige could be improved? Feel free to send your feature's suggestion by [email](mailto:hello@quentin-bellanger.com) or on [Twitter](https://twitter.com/bellanger_q).
+
+### Bugs
+
+If you find bugs when installing or using the theme, please open a new issue or [send an email](mailto:hello@quentin-bellanger.com).
+
+## Development
+
+### Installation
 
 Install **ghost-cli**:
-```
+```shell
 npm install -g ghost-cli
 ```
 
 Install **Ghost** in development mode:
-```
+```shell
 ghost install local
 ```
 
 Install **Gulp** and plugins with npm:
-```
+```shell
 npm install gulp
 npm i
 ```
-
-## Development
 
 ### Local server
 Start local Ghost server on `localhost:2368`:
@@ -42,3 +67,10 @@ Compress the theme in a `.zip` file in order to upload it on the Ghost admin. Al
 ```shell
 gulp build
 ```
+
+### To do
+
+- [ ] Fix checkbox & radio labels
+- [ ] Link neige in footer
+- [ ] Fill meta data (both `default.hbs` & `error.hbs`)
+- [ ] Add table of content in `README.md`
