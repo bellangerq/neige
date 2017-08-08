@@ -31,7 +31,11 @@ gulp.task('build', ['minify'], () =>
     .src([
       './**',
       '!*.zip',
-      '!./{node_modules,node_modules/**}'
+      '!./{node_modules,node_modules/**}',
+      '!./{src,src/**}',
+      '!*.json',
+      '!*.js',
+      '!*.md'
     ])
 		.pipe(zip('neige.zip'))
 		.pipe(gulp.dest(''))
