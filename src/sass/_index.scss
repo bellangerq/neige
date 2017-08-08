@@ -18,7 +18,11 @@
         text-decoration: none;
       }
 
-      .date-block {
+      .info {
+        color: $color-grey-70;
+        font-family: $font-sans-serif;
+        font-size: 14px;
+        text-transform: uppercase;
 
         .icon {
           margin: 0 5px 0 0;
@@ -27,11 +31,16 @@
           width: 20px;
         }
 
-        .date {
-          color: $color-grey-70;
-          font-family: $font-sans-serif;
-          font-size: 14px;
-          text-transform: uppercase;
+        .date, .author {
+          display: inline-block;
+        }
+
+        .author {
+          margin: 0 0 0 20px;
+
+          a {
+            border-bottom: none;
+          }
         }
       }
     }
