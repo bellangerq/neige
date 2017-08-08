@@ -1,0 +1,9 @@
+.error {
+  margin: 70px auto 0 auto;
+  max-width: 600px;
+  padding: 25px;
+  @media(min-width: 768px){
+    margin: 0 auto;
+    padding: 50px;
+  }
+}
