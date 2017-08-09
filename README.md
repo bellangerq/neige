@@ -2,6 +2,16 @@
 
 [Neige](#) is a minimalist and lightweight Ghost theme.
 
+- [About](#about)
+- [Support](#support)
+ - [Installation](#installation)
+ - [Feature request](#feature-request)
+ - [Bugs](#bugs)
+- [Development](#development)
+ - [Installation](#installation)
+ - [Local server](#local-serve)
+ - [Build](#build)
+
 ## About
 
 Neige is **simple**. Instead of having many features, it focuses on the basic ones. The minimalist aspect helps removing the clutter to focus on the most important: the content.
@@ -67,10 +77,3 @@ Compress the theme in a `.zip` file in order to upload it on the Ghost admin. Al
 ```shell
 gulp build
 ```
-
-### To do
-
-- [ ] Fix checkbox & radio labels
-- [ ] Link neige in footer
-- [ ] Fill meta data (both `default.hbs` & `error.hbs`)
-- [ ] Add table of content in `README.md`
