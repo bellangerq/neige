@@ -4,13 +4,13 @@
 
 - [About](#about)
 - [Support](#support)
- - [Installation](#installation)
- - [Feature request](#feature-request)
- - [Bugs](#bugs)
+  - [Installation](#installation)
+  - [Feature request](#feature-request)
+  - [Bugs](#bugs)
 - [Development](#development)
- - [Installation](#installation)
- - [Local server](#local-serve)
- - [Build](#build)
+  - [Installation](#installation)
+  - [Local server](#local-server)
+  - [Build](#build)
 
 ## About
 
