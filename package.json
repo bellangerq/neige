@@ -1,6 +1,7 @@
 {
   "name": "neige",
   "description": "Neige is a minimalist and lightweight Ghost theme.",
+  "demo": "https://neige-theme.com",
   "version": "0.5.0",
   "engines": {
     "ghost": ">=1.0.0"
@@ -9,8 +10,34 @@
   "author": {
     "email": "hello@quentin-bellanger.com"
   },
+  "author": {
+    "name": "Quentin Bellanger",
+    "email": "hello@quentin-bellanger.com",
+    "url": "https://quentin-bellanger.com"
+  },
+  "keywords": [
+    "ghost",
+    "theme"
+  ],
   "config": {
-    "posts_per_page": 6
+    "posts_per_page": 10
+  },
+  "gpm": {
+    "type": "theme",
+    "categories": [
+      "Minimal",
+      "Personal Blogs",
+      "Elegant Style"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bellangerq/neige"
+  },
+  "bugs": "https://github.com/bellangerq/neige/issues",
+  "screenshots": {
+    "desktop": "assets/img/screenshot-desktop.jpg",
+    "mobile": "assets/img/screenshot-mobile.jpg"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
