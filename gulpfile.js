@@ -2,7 +2,6 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const cssnano = require('gulp-cssnano');
-const imageOptim = require('gulp-imageoptim');
 const zip = require('gulp-zip');
 
 gulp.task('sass', () =>
@@ -18,13 +17,6 @@ gulp.task('minify', ['sass'], () =>
     .pipe(cssnano())
     .pipe(gulp.dest('assets/css/'))
 );
-
-// gulp.task('images', () =>
-//   gulp
-//     .src('src/img/**/*')
-//     .pipe(imageOptim.optimize())
-//     .pipe(gulp.dest('assets/img'))
-// );
 
 gulp.task('build', ['minify'], () =>
 	gulp

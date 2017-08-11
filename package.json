@@ -36,8 +36,8 @@
   },
   "bugs": "https://github.com/bellangerq/neige/issues",
   "screenshots": {
-    "desktop": "assets/img/screenshot-desktop.jpg",
-    "mobile": "assets/img/screenshot-mobile.jpg"
+    "desktop": "src/img/desktop.jpg",
+    "mobile": "src/img/mobile.jpg"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
