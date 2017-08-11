@@ -61,9 +61,10 @@ npm i
 ```
 
 ### Local server
-Start local Ghost server on `localhost:2368`:
+Start local Ghost server on `localhost:2370`:
 ```shell
-ghost start
+nodemon current/index.js --watch content/themes/neige --ext hbs,js,css
+
 ```
 
 ### Build
