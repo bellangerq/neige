@@ -22,7 +22,7 @@
   			<meta property="og:url" content="{{url absolute='true'}}" />
   			<meta property="og:title" content="{{{title}}}" />
   			<meta property="og:description" content="{{excerpt}}" />
-  			<meta property="og:image" content="{{@blog.url}}{{asset 'img/facebook-opengraph.png'}}" />
+  			<meta property="og:image" content="{{@blog.url}}{{img_url feature_image}}" />
   		{{/post}}
   	{{else}}
   		{{#if author}}
@@ -38,11 +38,13 @@
   			<meta property="og:url" content="{{@blog.url}}" />
   			<meta property="og:title" content="{{@blog.title}}" />
   			<meta property="og:description" content="{{@blog.description}}" />
-  			<meta property="og:image" content="{{@blog.url}}{{asset 'img/facebook-opengraph.png'}}" />
+  			<meta property="og:image" content="{{@blog.cover_image}}" />
   		{{/if}}
   	{{/if}}
 
     {{!-- Styles --}}
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo:400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
 
     {{!-- This tag outputes SEO meta+structured data and other important settings --}}
