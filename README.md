@@ -16,7 +16,7 @@
 
 Neige is **simple**. Instead of having many features, it focuses on the basic ones. The minimalist aspect helps removing the clutter to focus on the most important: the content.
 
-Neige is **lightweight**. It only weights **XXXkb** and doesn't contain any JavaScript. Why does it matter? It gives Neige the ability to load very fast everywhere in every browser.
+Neige is **lightweight**. It only weights **8 kb** and doesn't contain any JavaScript. Why does it matter? It gives Neige the ability to load very fast everywhere in every browser.
 
 To take a deeper look into Neige, [give the demo a try](#) and browse Neige as you would do on a real blog.
 
@@ -26,19 +26,20 @@ To take a deeper look into Neige, [give the demo a try](#) and browse Neige as y
 
 ### Installation
 
-To install Neige to your Ghost blog, please follow these steps:
+To install Neige to your Ghost blog, follow these steps:
 1. Download the compressed (`.zip`) file of the theme.
 2. Upload it in the **Design** tab of your Ghost admin.
+3. Enjoy Neige!
 
-If you have troubles, please refer to the official [Ghost documentation about installing new themes](#).
+If you have troubles, please refer to the official [Ghost documentation about installing new themes](https://help.ghost.org/hc/en-us/articles/223241628-Uploading-Themes).
 
 ### Feature request
 
-You think Neige could be improved? Feel free to send your feature's suggestion by [email](mailto:hello@quentin-bellanger.com) or on [Twitter](https://twitter.com/bellanger_q).
+You think Neige could be improved? Feel free to send your feature's suggestions by [email](mailto:hello@quentin-bellanger.com) or on [Twitter](https://twitter.com/bellanger_q).
 
 ### Bugs
 
-If you find bugs when installing or using the theme, please open a new issue or [send an email](mailto:hello@quentin-bellanger.com).
+If you find bugs when installing or using the theme, please open a new issue or [send an messsage](mailto:hello@quentin-bellanger.com).
 
 ## Development
 
