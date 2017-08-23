@@ -68,6 +68,10 @@ ol, ul {
   margin: 25px 0 12.5px 0;
   padding: 0 0 0 20px;
 
+  ol, ul {
+    margin-top: 0; 
+  }
+
   li {
     margin: 12.5px 0;
   }
